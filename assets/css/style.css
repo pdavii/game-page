@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body {
+    margin: 0;
+    padding: 0;  
+}
+.container {
+    border-radius: 50px;
+    background-color: #030820;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+header {
+    height: 70px;
+    width: 100%;
+    background-color: #121038;
+    display: flex;
+    align-items: center;
+    color:#FFF;
+    text-align: center;
+    border-radius: 60px;
+}
+header .bolinhas {
+    flex: 1;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    position: absolute;
+}
+header h1 {
+    flex: 2;
+    justify-content: left;
+}
+.bolinhas .bola1,
+.bolinhas .bola2,
+.bolinhas .bola3 {
+    width: 30px;
+    height: 30px;
+    background-color: #3A277C;
+    margin: 10px;
+    border-radius: 15px;
+    box-sizing: content-box;
+}
+.bolinhas .bola1 {
+    background-color: #66FED1;
+}
+#principal {
+    display: flex;
+    flex-direction: column;
+}
+#principal .parte1 {
+    max-height: 210px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.parte1 .imagem, 
+.parte1 .imagem img {
+    height: 160px;
+    width: 260px;
+}
+.barra_busca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    border: 5px solid #121038;
+}
+input[type=text],
+.barra_busca {
+    padding: 30px;
+    height: 70px;
+    width:600px;
+
+}
+input[type=text] {
+    background-color: transparent;
+    border: transparent;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    outline:0;
+    color: #FFF;
+    font-size:20px;
+}
+input[type=text]::placeholder {
+    color: #FFF;
+}
+.parte1 .botao {
+    width: 600px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.parte1 .botao .bot1,
+.parte1 .botao .bot2 {
+    padding: 32px;
+    border-radius: 40px;
+    width: 150px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+.parte1 .botao .bot1 {
+  margin-right: 70px;
+  background-color: #121038;
+  border: 3px solid #9a77cb;
+}
+.parte1 .botao .bot2 {
+    background-color: #9a77cb;
+    
+}
+
+.parte2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.parte2 .desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #66fed1;
+    padding: 0;
+    color: #121038;
+    border: 2px solid #3a277c;
+    border-left: 5px solid #3a277c;
+    border-right: 10px solid #3a277c;
+    margin-left: 200px;
+    width: 420px;
+    border-radius: 30px;
+    font-size: 20px;
+    height: 60px;
+}
+
+.parte3 {
+    margin-top: 30px;
+    display: flex;
+}
+.parte3 .usuario {
+    height: 500px;
+    display: flex;
+}
+.parte3 .usuario .user {
+    background-color: #121038;
+    margin-left: 30px;
+    height: 230px;
+    width: 230px;
+    border-radius: 15px;
+}
+.parte3 .usuario .user_titulo {
+    height: 55px;
+    background-color: #3a277c;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px;
+    font-size: 22px;
+    color: #66fed1;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.parte3 .usuario .user_content {
+    display: flex;
+    flex-direction: column;
+}
+.usuario .user_content .barra {
+    background-color: #3a277c;
+    height: 25px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.parte3 .sabermais {
+    display: flex;
+    flex-wrap: wrap;
+}
+.parte3 .sabermais .quadrado {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    height: 230px;
+    width: 230px;
+    border-radius: 15px;
+}
+.sabermais .quadrado .pt1 {
+    background-color: #121038;
+    flex:3;
+    border-radius: 20px;
+    
+}
+.sabermais .quadrado .pt2 {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+.sabermais .quadrado .pt2 a {
+    background-color: #3a277c;
+    border-radius: 20px;
+    text-decoration: none;
+    color:#FFF;
+    font-size: 18px;
+    padding: 6px;
+}
+
+
+
+
+@media (max-width:600px) {
+
+    header {
+        justify-content: space-between;
+    }
+    header .bolinhas {
+        flex: 1;
+        max-width: 150px;
+        align-items: center;
+    }
+    .bolinhas .bola1,
+    .bolinhas .bola2,
+    .bolinhas .bola3 {
+        width: 15px;
+        height: 15px;
+        background-color: #3A277C;
+        margin: 6px;
+        border-radius: 10px;
+    }
+    .bolinhas .bola1 {
+        background-color: #66FED1;
+    }
+    header h1 {
+        flex: 1;
+        font-size: 25px;
+        justify-content: left;
+    }
+
+    .parte1 .imagem, 
+    .parte1 .imagem img {
+        height: 100px;
+        width: 160px;
+    }
+   
+}
